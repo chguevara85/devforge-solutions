@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DevForge Solutions | Iniciar sesión</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="auth-page">
+	<main class="auth-shell">
+		<section class="auth-intro">
+			<p class="eyebrow">DevForge Solutions</p>
+			<h1>Gestiona tus proyectos digitales.</h1>
+			<p class="intro-text">Centraliza clientes, cotizaciones y entregas desde un solo lugar.</p>
+		</section>
+
+		<section class="auth-card" aria-labelledby="login-title">
+			<div class="brand-mark">DF</div>
+			<p class="eyebrow">Acceso al sistema</p>
+			<h2 id="login-title">Iniciar sesión</h2>
+			<p class="muted-text">Ingresa tus credenciales para continuar.</p>
+
+			<div id="mensaje" class="form-message" role="alert" hidden></div>
+
+			<form action="http://localhost/devforge-solutions/php/login.php" method="post">
+				<label for="email">Correo electrónico</label>
+				<input type="email" id="email" name="email" autocomplete="email" required>
+
+				<label for="password">Contraseña</label>
+				<input type="password" id="password" name="password" autocomplete="current-password" required>
+
+				<button type="submit">Ingresar</button>
+			</form>
+
+			<p class="auth-footer">¿Aún no tienes una cuenta? <a href="registro.html">Crear cuenta</a></p>
+		</section>
+	</main>
+	<script src="js/validaciones.js"></script>
+</body>
+</html>

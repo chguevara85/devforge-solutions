@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DevForge Solutions | Cotizaciones</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="app-page">
+	<header class="app-header"><a class="app-brand" href="dashboard.php">DevForge <span>Solutions</span></a><div class="user-menu"><a href="dashboard.php">Dashboard</a><a href="php/logout.php">Cerrar sesión</a></div></header>
+	<main class="app-main">
+		<section class="page-heading"><p class="eyebrow">Módulo financiero</p><h1>Cotizaciones</h1><p class="muted-text">Elabora presupuestos claros y controla su estado de aprobación.</p></section>
+		<section class="workspace-grid">
+			<form class="panel" action="#" method="post">
+				<p class="eyebrow">Nueva propuesta</p><h2>Crear cotización</h2>
+				<label for="proyecto-cotizacion">Proyecto</label><select id="proyecto-cotizacion" name="id_proyecto"><option>Seleccionar proyecto</option></select>
+				<label for="monto">Monto</label><input id="monto" name="monto" type="number" min="0" step="0.01" required>
+				<label for="fecha-validez">Válida hasta</label><input id="fecha-validez" name="fecha_validez" type="date">
+				<label for="detalle">Detalle del servicio</label><textarea id="detalle" name="detalle" rows="4"></textarea>
+				<button type="submit">Guardar cotización</button>
+			</form>
+			<section class="panel table-panel"><div class="panel-heading"><div><p class="eyebrow">Seguimiento</p><h2>Cotizaciones recientes</h2></div><span class="status-chip">0 pendientes</span></div><div class="empty-state"><strong>No hay cotizaciones registradas</strong><span>Las propuestas creadas aparecerán en este listado.</span></div></section>
+		</section>
+	</main>
+</body>
+</html>

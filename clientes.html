@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DevForge Solutions | Clientes</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="app-page">
+	<header class="app-header">
+		<a class="app-brand" href="dashboard.php">DevForge <span>Solutions</span></a>
+		<div class="user-menu"><a href="dashboard.php">Dashboard</a><a href="php/logout.php">Cerrar sesión</a></div>
+	</header>
+	<main class="app-main">
+		<section class="page-heading"><p class="eyebrow">Módulo comercial</p><h1>Clientes</h1><p class="muted-text">Administra la información de contacto y el historial de cada cliente.</p></section>
+		<section class="workspace-grid">
+			<form class="panel" action="#" method="post">
+				<p class="eyebrow">Nuevo registro</p><h2>Agregar cliente</h2>
+				<label for="razon-social">Razón social</label><input id="razon-social" name="razon_social" type="text" required>
+				<label for="ruc">RUC</label><input id="ruc" name="ruc" type="text" maxlength="11">
+				<label for="email-cliente">Correo electrónico</label><input id="email-cliente" name="email" type="email">
+				<label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel">
+				<button type="submit">Guardar cliente</button>
+			</form>
+			<section class="panel table-panel"><div class="panel-heading"><div><p class="eyebrow">Directorio</p><h2>Clientes registrados</h2></div><span class="status-chip">0 clientes</span></div><div class="empty-state"><strong>Aún no hay clientes</strong><span>Registra el primer cliente para comenzar el seguimiento.</span></div></section>
+		</section>
+	</main>
+</body>
+</html>

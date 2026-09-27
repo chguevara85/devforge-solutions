@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DevForge Solutions | Proyectos</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="app-page">
+	<header class="app-header">
+		<a class="app-brand" href="dashboard.php">DevForge <span>Solutions</span></a>
+		<div class="user-menu"><a href="dashboard.php">Dashboard</a><a href="php/logout.php">Cerrar sesión</a></div>
+	</header>
+	<main class="app-main">
+		<section class="page-heading">
+			<p class="eyebrow">Módulo operativo</p>
+			<h1>Proyectos</h1>
+			<p class="muted-text">Organiza el avance, responsables y entregas de cada proyecto.</p>
+		</section>
+		<section class="workspace-grid">
+			<form class="panel" action="#" method="post">
+				<p class="eyebrow">Nuevo registro</p>
+				<h2>Crear proyecto</h2>
+				<label for="nombre-proyecto">Nombre del proyecto</label>
+				<input id="nombre-proyecto" name="nombre_proyecto" type="text" required>
+				<label for="cliente-proyecto">Cliente</label>
+				<select id="cliente-proyecto" name="id_cliente"><option>Seleccionar cliente</option></select>
+				<label for="estado-proyecto">Estado</label>
+				<select id="estado-proyecto" name="estado"><option>En cotización</option><option>En desarrollo</option><option>En pruebas</option><option>Entregado</option></select>
+				<button type="submit">Guardar proyecto</button>
+			</form>
+			<section class="panel table-panel">
+				<div class="panel-heading"><div><p class="eyebrow">Seguimiento</p><h2>Proyectos recientes</h2></div><span class="status-chip">0 activos</span></div>
+				<div class="empty-state"><strong>No hay proyectos registrados</strong><span>Los nuevos proyectos aparecerán aquí.</span></div>
+			</section>
+		</section>
+	</main>
+</body>
+</html>
