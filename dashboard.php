@@ -39,22 +39,22 @@ $nombre = htmlspecialchars($_SESSION['nombre'], ENT_QUOTES, 'UTF-8');
             <article class="metric-card">
                 <span>Proyectos</span>
                 <strong><?= $estadisticas['proyectos'] ?></strong>
-                <a href="proyectos.html">Ver proyectos</a>
+                <a href="proyectos.php">Ver proyectos</a>
             </article>
             <article class="metric-card">
                 <span>Clientes</span>
                 <strong><?= $estadisticas['clientes'] ?></strong>
-                <a href="clientes.html">Ver clientes</a>
+                <a href="clientes.php">Ver clientes</a>
             </article>
             <article class="metric-card">
                 <span>Cotizaciones</span>
                 <strong><?= $estadisticas['cotizaciones'] ?></strong>
-                <a href="cotizaciones.html">Ver cotizaciones</a>
+                <a href="cotizaciones.php">Ver cotizaciones</a>
             </article>
             <article class="metric-card">
                 <span>Usuarios activos</span>
                 <strong><?= $estadisticas['usuarios'] ?></strong>
-                <a href="reportes.html">Ver reportes</a>
+                <a href="reportes.php">Ver reportes</a>
             </article>
         </section>
 
